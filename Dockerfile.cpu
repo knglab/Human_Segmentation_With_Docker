@@ -21,4 +21,3 @@ RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 SHELL ["/bin/bash", "-c"]
 ENTRYPOINT source /venv/bin/activate && \
            python bg_replace.py --config export_model/fcn_hrnetw18_small_v1_humanseg_192x192_with_softmax/deploy.yaml --video_folder_path ./input --use_cpu
-#CMD ["/bin/bash"]

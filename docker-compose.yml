@@ -3,7 +3,6 @@ services:
   simswap:
     image: humanseg
     container_name: HumanSeg
-#    entrypoint: "bash -c 'source /venv/bin/activate && python run.py --thresh ${THRESHOLD}'"
     volumes:
       - ./input:/input
       - ./output:/output
